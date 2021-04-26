@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37582F9D263755EA005EDC51 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37582F9C263755EA005EDC51 /* CoreDataStack.swift */; };
+		37582FA126375793005EDC51 /* Entry+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37582FA026375793005EDC51 /* Entry+Convenience.swift */; };
+		37582FA826375B05005EDC51 /* EntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37582FA726375B05005EDC51 /* EntryController.swift */; };
+		37582FAE26375D93005EDC51 /* EntryListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37582FAD26375D93005EDC51 /* EntryListTableViewController.swift */; };
+		37582FB12637608B005EDC51 /* EntryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37582FB02637608B005EDC51 /* EntryTableViewCell.swift */; };
+		37582FB4263763F9005EDC51 /* EntryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37582FB3263763F9005EDC51 /* EntryDetailViewController.swift */; };
+		37582FB826376BEB005EDC51 /* DateFormatter+Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37582FB726376BEB005EDC51 /* DateFormatter+Extras.swift */; };
 		7EDB75BD25B5C81B00B80B7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDB75BC25B5C81B00B80B7D /* AppDelegate.swift */; };
 		7EDB75BF25B5C81B00B80B7D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDB75BE25B5C81B00B80B7D /* SceneDelegate.swift */; };
 		7EDB75C425B5C81B00B80B7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB75C225B5C81B00B80B7D /* Main.storyboard */; };
@@ -16,6 +23,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		37582F9C263755EA005EDC51 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		37582FA026375793005EDC51 /* Entry+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entry+Convenience.swift"; sourceTree = "<group>"; };
+		37582FA726375B05005EDC51 /* EntryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryController.swift; sourceTree = "<group>"; };
+		37582FAD26375D93005EDC51 /* EntryListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryListTableViewController.swift; sourceTree = "<group>"; };
+		37582FB02637608B005EDC51 /* EntryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryTableViewCell.swift; sourceTree = "<group>"; };
+		37582FB3263763F9005EDC51 /* EntryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDetailViewController.swift; sourceTree = "<group>"; };
+		37582FB726376BEB005EDC51 /* DateFormatter+Extras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extras.swift"; sourceTree = "<group>"; };
 		7EDB75B925B5C81B00B80B7D /* JournalCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JournalCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EDB75BC25B5C81B00B80B7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7EDB75BE25B5C81B00B80B7D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +51,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37582FA326375AAA005EDC51 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				37582FA526375AB6005EDC51 /* Model Controllers */,
+				37582FA426375AB2005EDC51 /* View Controllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		37582FA426375AB2005EDC51 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				37582FAD26375D93005EDC51 /* EntryListTableViewController.swift */,
+				37582FB3263763F9005EDC51 /* EntryDetailViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		37582FA526375AB6005EDC51 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				37582FA726375B05005EDC51 /* EntryController.swift */,
+			);
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		37582FA626375AC5005EDC51 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				37582FB02637608B005EDC51 /* EntryTableViewCell.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		37582FAB26375CE3005EDC51 /* Helper and Extension */ = {
+			isa = PBXGroup;
+			children = (
+				37582FB726376BEB005EDC51 /* DateFormatter+Extras.swift */,
+			);
+			path = "Helper and Extension";
+			sourceTree = "<group>";
+		};
 		7EDB75B025B5C81B00B80B7D = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +112,11 @@
 		7EDB75BB25B5C81B00B80B7D /* JournalCoreData */ = {
 			isa = PBXGroup;
 			children = (
-				7EDB75D425B5C82500B80B7D /* Resources */,
-				7EDB75D825B5C83B00B80B7D /* Views */,
 				7EDB75D925B5C84700B80B7D /* CoreData */,
+				37582FA326375AAA005EDC51 /* Controllers */,
+				7EDB75D825B5C83B00B80B7D /* Views */,
+				7EDB75D425B5C82500B80B7D /* Resources */,
+				37582FAB26375CE3005EDC51 /* Helper and Extension */,
 			);
 			path = JournalCoreData;
 			sourceTree = "<group>";
@@ -86,6 +144,7 @@
 		7EDB75D825B5C83B00B80B7D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				37582FA626375AC5005EDC51 /* Custom Views */,
 				7EDB75D725B5C83300B80B7D /* Storyboards */,
 			);
 			path = Views;
@@ -95,6 +154,8 @@
 			isa = PBXGroup;
 			children = (
 				7EDB75C525B5C81B00B80B7D /* JournalCoreData.xcdatamodeld */,
+				37582F9C263755EA005EDC51 /* CoreDataStack.swift */,
+				37582FA026375793005EDC51 /* Entry+Convenience.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -169,9 +230,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37582FB12637608B005EDC51 /* EntryTableViewCell.swift in Sources */,
+				37582FA826375B05005EDC51 /* EntryController.swift in Sources */,
 				7EDB75BD25B5C81B00B80B7D /* AppDelegate.swift in Sources */,
+				37582FB4263763F9005EDC51 /* EntryDetailViewController.swift in Sources */,
 				7EDB75C725B5C81B00B80B7D /* JournalCoreData.xcdatamodeld in Sources */,
+				37582FAE26375D93005EDC51 /* EntryListTableViewController.swift in Sources */,
 				7EDB75BF25B5C81B00B80B7D /* SceneDelegate.swift in Sources */,
+				37582F9D263755EA005EDC51 /* CoreDataStack.swift in Sources */,
+				37582FA126375793005EDC51 /* Entry+Convenience.swift in Sources */,
+				37582FB826376BEB005EDC51 /* DateFormatter+Extras.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
