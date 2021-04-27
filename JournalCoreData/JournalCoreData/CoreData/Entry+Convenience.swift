@@ -15,3 +15,15 @@ extension Entry {
         self.timestamp = timestamp
     }
 }
+
+extension Entry {
+    static func ==(lhs: Entry, rhs: Entry) -> Bool {
+        return lhs.uuid == rhs.uuid
+    }
+}
+
+//extension Entry {
+//    static func == (lhs: Entry, rhs: Entry) -> Bool {
+//        return lhs.title == rhs.title && lhs.title == rhs.title && lhs.timestamp == rhs.timestamp
+//    }
+//}
